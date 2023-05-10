@@ -5,17 +5,17 @@ export default function App() {
   const Links = [
     {
       icon: <FaTelegram className="text-[#928165]" size={20} />,
-      href: '',
+      href: 'https://t.me/BigFloppaPortal',
       name: 'Telegram',
     },
     {
       icon: <FaTwitter className="text-[#928165]" size={20} />,
-      href: '',
+      href: 'https://twitter.com/floppa_eth',
       name: 'twitter',
     },
     {
       icon: <SiMedium className="text-[#928165]" size={20} />,
-      href: '',
+      href: 'https://medium.com/@BigFloppa',
       name: 'medium',
     },
     {
@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <main className=" relative ">
-      <header className="py-6 container mx-auto px-5 lg:px-14">
+      <header className=" pt-1 lg:py-6 container mx-auto px-5 lg:px-14">
         <img src="/Logo.png" alt="follopa" className="max-w-[120px] w-full" />
       </header>
       {/* Hero section */}
@@ -59,11 +59,11 @@ export default function App() {
           </div>
         </div>
         <div className="w-full min-h-[120px]  relative flex py-4 justify-center bg-white md:rounded-[96px]">
-          <ul className="grid  grid-cols-2 place-items-center md:grid-cols-4 gap-6">
+          <ul className="grid px-4  grid-cols-2 place-items-center md:grid-cols-4 gap-6">
             {Links.map((link, i) => (
               <li
                 key={i}
-                className=" flex w-full min-w-[176px] bg-[#EFE9E1] max-h-[48px] rounded-full px-5 py-4 items-center gap-2"
+                className=" flex justify-center w-full min-w-[176px] bg-[#EFE9E1] max-h-[48px] rounded-full px-5 py-4 items-center gap-2"
               >
                 {link.icon}
                 <a
@@ -100,7 +100,7 @@ export default function App() {
               />
             </svg>
           </div>
-          <div className=" absolute  left-0 md:left-[5%] lg:left-[3%] -z-10   top-[85%]">
+          <div className=" absolute  hidden md:block left-0 md:left-[5%] lg:left-[3%] -z-10   top-[85%]">
             <svg
               width="290"
               height="48"
@@ -118,9 +118,27 @@ export default function App() {
               />
             </svg>
           </div>
+          <div className=" absolute   md:hidden left-0 md:left-[5%] lg:left-[3%] -z-10   top-[90%]">
+            <svg
+              width="260"
+              height="48"
+              viewBox="0 0 260 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M260 0.216034C260 0.216034 220.339 41.3717 184.085 46.8887C147.832 52.4056 137.169 35.4338 110.732 38.4027C84.2896 41.3717 86.8509 51.5526 63.3928 46.0412C39.9346 40.5242 22 24.1118 22 24.1118V0L260 0.216034Z"
+                fill="#ECE6DF"
+              />
+              <path
+                d="M-30 13C-30 13 -6.56028 42.3429 25.779 39.8497C58.1182 37.351 65.1718 20.295 87.5613 24.4558C109.951 28.6166 117.827 39.8497 134.831 34.4395C151.828 29.0294 173 13 173 13H-30Z"
+                fill="white"
+              />
+            </svg>
+          </div>
         </div>
 
-        <div className=" flex absolute top-[97%] lg:top-[85%] z-[99999] w-full justify-between">
+        <div className=" flex absolute top-[100%] lg:top-[85%] z-[99999] w-full justify-between">
           <div className="md:w-auto w-[176px]">
             <img src="/1.png" className="" alt="" />
           </div>
