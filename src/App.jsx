@@ -59,22 +59,20 @@ export default function App() {
           </div>
         </div>
         <div className="w-full min-h-[120px]  relative flex py-4 justify-center bg-white md:rounded-[96px]">
-          <ul className="grid px-4  grid-cols-2 place-items-center md:grid-cols-4 gap-6">
+          <ul className="grid px-4  relative z-[9999999999999] grid-cols-2 place-items-center md:grid-cols-4 gap-6">
             {Links.map((link, i) => (
-              <li
+              <a
                 key={i}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className=" flex justify-center w-full min-w-[176px] bg-[#EFE9E1] max-h-[48px] rounded-full px-5 py-4 items-center gap-2"
               >
                 {link.icon}
-                <a
-                  className="text-sm text-[#534741]  uppercase font-semibold"
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <span className="text-sm text-[#534741]  uppercase font-semibold">
                   {link.name}
-                </a>
-              </li>
+                </span>
+              </a>
             ))}
           </ul>
           <div className=" absolute right-0 md:right-[3%] -z-10 top-[-70%] md:top-[-100%]">
